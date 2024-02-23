@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Package Tracking</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="outer">
+      <div id="inner">
+        <h1>Package Tracking</h1>
+        <input type="text" name="" id="tracking-number" />
+        <div id="services">
+          <a href="https://www.aramex.com.au/tools/track/?l=%TRACKING_NUMBER%">
+            <img
+              src="images/aramex.webp"
+              alt="Aramex"
+              width="122"
+              height="20"
+              data-url="https://www.aramex.com.au/tools/track/?l=%TRACKING_NUMBER%"
+              data-shortcut="ar"
+            />
+          </a>
+          <a
+            href="https://auspost.com.au/mypost/track/#/details/%TRACKING_NUMBER%"
+          >
+            <img
+              src="images/australia_post.webp"
+              alt="Australia Post"
+              width="107"
+              height="23"
+              data-url="https://auspost.com.au/mypost/track/#/details/%TRACKING_NUMBER%"
+              data-shortcut="ap"
+            />
+          </a>
+          <a
+            href="https://global.cainiao.com/detail.htm?mailNoList=%TRACKING_NUMBER%"
+          >
+            <img
+              src="images/cainiao.webp"
+              alt="Cainiao"
+              width="66"
+              height="37"
+              data-url="https://global.cainiao.com/detail.htm?mailNoList=%TRACKING_NUMBER%"
+              data-shortcut="cn"
+            />
+          </a>
+          <a
+            href="https://www.dhl.com/au-en/home/tracking/tracking-express.html?submit=1&tracking-id=%TRACKING_NUMBER%"
+          >
+            <img
+              src="images/dhl.webp"
+              alt="DHL"
+              width="129"
+              height="18"
+              data-url="https://www.dhl.com/au-en/home/tracking/tracking-express.html?submit=1&tracking-id=%TRACKING_NUMBER%"
+              data-shortcut="dhl"
+            />
+          </a>
+          <a href="https://www.fedex.com/fedextrack/?trknbr=%TRACKING_NUMBER%">
+            <img
+              src="images/fedex.webp"
+              alt="FedEx"
+              width="94"
+              height="26"
+              data-url="https://www.fedex.com/fedextrack/?trknbr=%TRACKING_NUMBER%"
+              data-shortcut="fedex"
+            />
+          </a>
+          <a
+            href="https://msto.startrack.com.au/track-trace/?id=%TRACKING_NUMBER%"
+          >
+            <img
+              src="images/star_track.webp"
+              alt="Star Track"
+              width="110"
+              height="23"
+              data-url="https://msto.startrack.com.au/track-trace/?id=%TRACKING_NUMBER%"
+              data-shortcut="st"
+            />
+          </a>
+          <a
+            href="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=%TRACKING_NUMBER%"
+          >
+            <img
+              src="images/tnt.webp"
+              alt="TNT"
+              width="82"
+              height="30"
+              data-url="https://www.tnt.com/express/en_au/site/shipping-tools/tracking.html?searchType=con&cons=%TRACKING_NUMBER%"
+              data-shortcut="tnt"
+            />
+          </a>
+          <a
+            href="https://www.mytoll.com/web/guest/shipment-details?consignmentId=%TRACKING_NUMBER%"
+          >
+            <img
+              src="images/toll.webp"
+              alt="Toll"
+              width="102"
+              height="24"
+              data-url="https://www.mytoll.com/web/guest/shipment-details?consignmentId=%TRACKING_NUMBER%"
+              data-shortcut="toll"
+            />
+          </a>
+          <a
+            href="https://www.ups.com/track?loc=en_AU&tracknum=%TRACKING_NUMBER%"
+          >
+            <img
+              src="images/ups.webp"
+              alt="UPS"
+              width="45"
+              height="54"
+              data-url="https://www.ups.com/track?loc=en_AU&tracknum=%TRACKING_NUMBER%"
+              data-shortcut="ups"
+            />
+          </a>
+        </div>
+        <p>
+          Tip: Shortcut prefix then press enter, e.g "ap:12345678". Available:
+          ar ap cn dhl fedex st tnt toll ups
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
