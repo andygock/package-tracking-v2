@@ -55,3 +55,8 @@ h1 {
   font-size: xx-large;
   color: #333;
 }
+
+#footer {
+  margin: 0 1rem;
+  text-align: right;
+}

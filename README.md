@@ -8,4 +8,4 @@ It will generate and open a new tab with tracking details. Only supports service
 
 ## Live site
 
-<https://andygock.github.io/package-tracking-v2/>
+<https://track.gock.net/>
