@@ -13,18 +13,18 @@ A fast, lightweight web application for tracking packages across multiple courie
 
 ## Supported Carriers
 
-| Carrier | Shortcut | Logo |
-|---------|----------|------|
-| Aramex | `ar:` | ![Aramex](images/aramex.webp) |
-| Australia Post | `ap:` | ![Australia Post](images/australia_post.webp) |
-| Cainiao | `cn:` | ![Cainiao](images/cainiao.webp) |
-| DHL | `dhl:` | ![DHL](images/dhl.webp) |
-| FedEx | `fedex:` | ![FedEx](images/fedex.webp) |
-| Star Track | `st:` | ![Star Track](images/star_track.webp) |
-| Team Global Express | `tge:` | ![Team Global Express](images/tge.png) |
-| TNT | `tnt:` | ![TNT](images/tnt.webp) |
-| Toll | `toll:` | ![Toll](images/toll.webp) |
-| UPS | `ups:` | ![UPS](images/ups.webp) |
+| Carrier             | Shortcut | Logo                                          |
+| ------------------- | -------- | --------------------------------------------- |
+| Aramex              | `ar:`    | ![Aramex](images/aramex.webp)                 |
+| Australia Post      | `ap:`    | ![Australia Post](images/australia_post.webp) |
+| Cainiao             | `cn:`    | ![Cainiao](images/cainiao.webp)               |
+| DHL                 | `dhl:`   | ![DHL](images/dhl.webp)                       |
+| FedEx               | `fedex:` | ![FedEx](images/fedex.webp)                   |
+| Star Track          | `st:`    | ![Star Track](images/star_track.webp)         |
+| Team Global Express | `tge:`   | ![Team Global Express](images/tge.png)        |
+| TNT                 | `tnt:`   | ![TNT](images/tnt.webp)                       |
+| Toll                | `toll:`  | ![Toll](images/toll.webp)                     |
+| UPS                 | `ups:`   | ![UPS](images/ups.webp)                       |
 
 ## How to Use
 
@@ -37,6 +37,7 @@ A fast, lightweight web application for tracking packages across multiple courie
 ### Using Shortcuts
 
 For faster tracking, use carrier shortcuts:
+
 - Type `ap:123456789` and press Enter to go directly to Australia Post
 - Type `fedex:123456789` and press Enter to go directly to FedEx
 - Available shortcuts: `ar`, `ap`, `cn`, `dhl`, `fedex`, `st`, `tge`, `tnt`, `toll`, `ups`
@@ -47,7 +48,9 @@ When you use a shortcut, a "Track" button appears. Click it to navigate to the s
 
 ## Live Demo
 
-Visit the live site: [https://track.gock.net/](https://track.gock.net/)
+Visit the live site hosted on GitHub Pages:
+
+<https://track.gock.net>
 
 ## Development
 
@@ -78,6 +81,7 @@ package-tracking-v2/
 ### Adding New Carriers
 
 To add support for a new carrier:
+
 1. Add the carrier logo to the `images/` folder (preferably WebP format)
 2. Add a new `<a>` element in the `#services` section of `index.html`
 3. Include `data-url`, `data-shortcut`, and proper `alt` attributes
