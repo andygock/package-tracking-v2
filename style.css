@@ -75,6 +75,13 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+h2 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-muted);
+}
+
 .subtitle {
   color: var(--text-muted);
   margin-bottom: 2rem;
