@@ -13,18 +13,19 @@ A fast, lightweight web application for tracking packages across multiple courie
 
 ## Supported Carriers
 
-| Carrier             | Shortcut | Logo                                          |
-| ------------------- | -------- | --------------------------------------------- |
-| Aramex              | `ar:`    | ![Aramex](images/aramex.webp)                 |
-| Australia Post      | `ap:`    | ![Australia Post](images/australia_post.webp) |
-| Cainiao             | `cn:`    | ![Cainiao](images/cainiao.webp)               |
-| DHL                 | `dhl:`   | ![DHL](images/dhl.webp)                       |
-| FedEx               | `fedex:` | ![FedEx](images/fedex.webp)                   |
-| Star Track          | `st:`    | ![Star Track](images/star_track.webp)         |
-| Team Global Express | `tge:`   | ![Team Global Express](images/tge.png)        |
-| TNT                 | `tnt:`   | ![TNT](images/tnt.webp)                       |
-| Toll                | `toll:`  | ![Toll](images/toll.webp)                     |
-| UPS                 | `ups:`   | ![UPS](images/ups.webp)                       |
+| Carrier             | Shortcut | Logo                                            |
+| ------------------- | -------- | ----------------------------------------------- |
+| Aramex              | `ar:`    | ![Aramex](images/aramex.webp)                   |
+| Australia Post      | `ap:`    | ![Australia Post](images/australia_post.webp)   |
+| Cainiao             | `cn:`    | ![Cainiao](images/cainiao.webp)                 |
+| Couriers Please     | `cp:`    | ![Couriers Please](images/couriers_please.webp) |
+| DHL                 | `dhl:`   | ![DHL](images/dhl.webp)                         |
+| FedEx               | `fedex:` | ![FedEx](images/fedex.webp)                     |
+| Star Track          | `st:`    | ![Star Track](images/star_track.webp)           |
+| Team Global Express | `tge:`   | ![Team Global Express](images/tge.png)          |
+| TNT                 | `tnt:`   | ![TNT](images/tnt.webp)                         |
+| Toll                | `toll:`  | ![Toll](images/toll.webp)                       |
+| UPS                 | `ups:`   | ![UPS](images/ups.webp)                         |
 
 ## How to Use
 
