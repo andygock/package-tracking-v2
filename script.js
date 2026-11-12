@@ -115,36 +115,40 @@
         // non-fatal if overlay can't be added
       }
 
-      try {
-        const u = new URL(replaced, location.href);
+      if (!trackingNumber) {
+        parentLink.removeAttribute("href");
+      } else {
+        try {
+          const u = new URL(replaced, location.href);
 
-        // only assign href when the destination origin is allowlisted
-        if (allowedOrigins.has(u.origin)) {
-          parentLink.href = u.href;
-        } else {
-          // fall back to carrier origin if available, or make link inert
-          try {
-            const fallback = new URL(raw, location.href);
-            parentLink.href = allowedOrigins.has(fallback.origin)
-              ? fallback.origin + "/"
-              : "#";
-          } catch (e) {
-            parentLink.href = "#";
+          // only assign href when the destination origin is allowlisted
+          if (allowedOrigins.has(u.origin)) {
+            parentLink.href = u.href;
+          } else {
+            // fall back to carrier origin if available, or make link inert
+            try {
+              const fallback = new URL(raw, location.href);
+              parentLink.href = allowedOrigins.has(fallback.origin)
+                ? fallback.origin + "/"
+                : "#";
+            } catch (e) {
+              parentLink.href = "#";
+            }
           }
-        }
 
-        // ensure external links include noopener/noreferrer for safety
-        if (u.origin !== location.origin) {
-          const rel = (parentLink.getAttribute("rel") || "")
-            .split(/\s+/)
-            .filter(Boolean);
-          if (!rel.includes("noopener")) rel.push("noopener");
-          if (!rel.includes("noreferrer")) rel.push("noreferrer");
-          parentLink.setAttribute("rel", rel.join(" "));
+          // ensure external links include noopener/noreferrer for safety
+          if (u.origin !== location.origin) {
+            const rel = (parentLink.getAttribute("rel") || "")
+              .split(/\s+/)
+              .filter(Boolean);
+            if (!rel.includes("noopener")) rel.push("noopener");
+            if (!rel.includes("noreferrer")) rel.push("noreferrer");
+            parentLink.setAttribute("rel", rel.join(" "));
+          }
+        } catch (err) {
+          // invalid URL — make link inert
+          parentLink.href = "#";
         }
-      } catch (err) {
-        // invalid URL — make link inert
-        parentLink.href = "#";
       }
 
       // Highlight the active carrier
@@ -169,10 +173,10 @@
         "@type": "ListItem",
         position: idx + 1,
         name: img.getAttribute("alt") || "",
-        url: (img.closest("a")
-          ? img.closest("a").href
-          : img.getAttribute("data-url") || ""
-        ).replace("%TRACKING_NUMBER%", "{trackingNumber}"),
+        url: (img.getAttribute("data-url") || "").replace(
+          "%TRACKING_NUMBER%",
+          "{trackingNumber}",
+        ),
       }));
 
       const ld = {
