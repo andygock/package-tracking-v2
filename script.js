@@ -85,7 +85,10 @@
     // update <a> links based on the current value of input#tracking-number
     document.querySelectorAll("#services img").forEach(function (img) {
       const raw = img.getAttribute("data-url");
-      const replaced = (raw || "").replace("%TRACKING_NUMBER%", trackingNumber);
+      const replaced = (raw || "").replace(
+        "%TRACKING_NUMBER%",
+        encodeURIComponent(trackingNumber),
+      );
 
       const parentLink = img.parentNode;
       const shortcut = img.getAttribute("data-shortcut");
@@ -246,7 +249,7 @@
 
       const rawUrl = carrierImg
         .getAttribute("data-url")
-        .replace("%TRACKING_NUMBER%", trackingNumber);
+        .replace("%TRACKING_NUMBER%", encodeURIComponent(trackingNumber));
       const u = parseAndAllow(rawUrl);
       if (u) {
         window.location.href = u.href;
@@ -295,7 +298,7 @@
 
         const rawUrl = (carrierImg.getAttribute("data-url") || "").replace(
           "%TRACKING_NUMBER%",
-          trackingNumber,
+          encodeURIComponent(trackingNumber),
         );
         const u = parseAndAllow(rawUrl);
         if (u) {

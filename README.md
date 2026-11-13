@@ -17,11 +17,15 @@ A fast, lightweight web application for tracking packages across multiple courie
 | ---------------------- | -------- | ---------------------------------------------------- |
 | Aramex                 | `ar:`    | ![Aramex](images/aramex.webp)                        |
 | Australia Post         | `ap:`    | ![Australia Post](images/australia_post.webp)        |
+| Border Express         | `bex:`   | ![Border Express](images/border_express.svg)         |
 | Cainiao                | `cn:`    | ![Cainiao](images/cainiao.webp)                      |
 | Couriers Please        | `cp:`    | ![Couriers Please](images/couriers_please.webp)      |
 | DHL                    | `dhl:`   | ![DHL](images/dhl.webp)                              |
 | Direct Freight Express | `dfe:`   | ![Direct Freight Express](images/direct_freight.svg) |
+| Dragonfly              | `df:`    | ![Dragonfly](images/dragonfly.svg)                   |
 | FedEx                  | `fedex:` | ![FedEx](images/fedex.webp)                          |
+| Hunter Express         | `he:`    | ![Hunter Express](images/hunter_express.webp)        |
+| Northline              | `nl:`    | ![Northline](images/northline.svg)                   |
 | Star Track             | `st:`    | ![Star Track](images/star_track.webp)                |
 | Team Global Express    | `tge:`   | ![Team Global Express](images/tge.png)               |
 | TNT                    | `tnt:`   | ![TNT](images/tnt.webp)                              |
@@ -43,7 +47,7 @@ For faster tracking, use carrier shortcuts:
 - Type `ap:123456789` and press Enter to go directly to Australia Post
 - Type `fedex:123456789` and press Enter to go directly to FedEx
 - Type `dfe:123456789` and press Enter to go directly to Direct Freight Express
-- Available shortcuts: `ar`, `ap`, `cn`, `cp`, `dhl`, `dfe`, `fedex`, `st`, `tge`, `tnt`, `toll`, `ups`
+- Available shortcuts: `ar`, `ap`, `bex`, `cn`, `cp`, `dhl`, `dfe`, `df`, `fedex`, `he`, `nl`, `st`, `tge`, `tnt`, `toll`, `ups`
 
 ### Track Button
 
